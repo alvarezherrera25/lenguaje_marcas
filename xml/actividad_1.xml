@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viaje tipo="turistico">
+    <clientes>
+        <cliente>
+            <nombre>Juan</nombre>
+            <apellidos>Pérez García</apellidos>
+        </cliente>
+        <cliente>
+            <nombre>María</nombre>
+            <apellidos>López Iturbe</apellidos>
+        </cliente>
+    </clientes>
+
+    <fecha_inicio>2026-06-15</fecha_inicio>
+    <fecha_fin>2026-06-30</fecha_fin>
+    <origen>Madrid, España</origen>
+
+    <destinos>
+        <destino>
+            <ciudad>París</ciudad>
+            <hotel>Hotel Lumière</hotel>
+            <noches>5</noches>
+        </destino>
+        <destino>
+            <ciudad>Roma</ciudad>
+            <hotel>Grand Italia</hotel>
+            <noches>10</noches>
+        </destino>
+    </destinos>
+
+    <precio moneda="EUR">2500.00</precio>
+</viaje>
