@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+    <destinatario>Juan Delgado Martínez</destinatario>
+    <articulo>doble elefante telepata de guerra</articulo>
+    <direccion_entrega>
+        <calle>Calle el pilar</calle>
+        <numero>4</numero>
+        <piso>tercer piso</piso>
+        <letra>A</letra>
+    </direccion_entrega>
+    <fecha_entrega>11/11/2027</fecha_entrega>
+</pedido>
