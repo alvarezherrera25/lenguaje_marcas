@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Información financiera de inversores y bolsas -->
+<informacion-financiera 
+    xmlns:bol="http://otra"
+    xmlns:prosfin="http://megustapasta">
+    <inversor>
+        <nombre>Peter</nombre>
+        <apellido>Parker</apellido>
+        <ciudad>New York</ciudad>
+    </inversor>
+    <bol:bolsa>
+        <bol:ciudad>Estocolmo</bol:ciudad>
+        <bol:identificador>STO</bol:identificador>
+    </bol:bolsa>
+    <prosfin:productos>
+        <prosfin:acciones>Generales</prosfin:acciones>
+        <prosfin:stock-options>&gt;25</prosfin:stock-options>
+        <prosfin:fondos>Buitre</prosfin:fondos>
+        <prosfin:ciudad>Suiza</prosfin:ciudad>
+    </prosfin:productos>
+</informacion-financiera>

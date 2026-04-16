@@ -7,8 +7,13 @@
             <h1 id="titulo">Soy un titulo</h1>
             <p class="cparrafo">Aprendiendo javascript</p>
             <script>
-                const mititulo = document.querySelector("#titulo");
-                mititulo.textContent = "nuevo titulo";
+                //const mititulo = document.querySelector("#titulo");
+                const mititulo = document.getElementById("titulo");
+                mititulo.textContent = "otro titulo";
+                mititulo.style.backgroundColor = "red";
+
+                const parrafos = document.querySelectorAll(".cparrafo");
+                parrafos.forEach( (parrafo) => {parrafo.style.backgroundColor = "blue";});
 
             /*let mivar = "adios"; //crear variable
             const numero = 5;
