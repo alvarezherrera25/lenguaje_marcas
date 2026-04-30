@@ -7,13 +7,33 @@
             <h1 id="titulo">Soy un titulo</h1>
             <p class="cparrafo">Aprendiendo javascript</p>
             <script>
-                //const mititulo = document.querySelector("#titulo");
+            
+            
+               //const mititulo = document.querySelector("#titulo");
                 const mititulo = document.getElementById("titulo");
                 mititulo.textContent = "otro titulo";
                 mititulo.style.backgroundColor = "red";
 
                 const parrafos = document.querySelectorAll(".cparrafo");
                 parrafos.forEach( (parrafo) => {parrafo.style.backgroundColor = "blue";});
+
+                const nuevoparrafo = document.createElement("p");//crear un nuevo elemento parrafo
+                nuevoparrafo.textContent = "Nuevo parrafo";//crear un nuevo parrafo
+
+                console.log("nuevoparrafo: ", nuevoparrafo); //mostrar el nuevo parrafo en consola
+                mititulo.insertAdjacentElement("afterend", nuevoparrafo); //insertar el nuevo parrafo despues del titulo
+
+                //mititulo.before(nuevoparrafo); //insertar el nuevo parrafo antes del titulo
+            
+                // crear caja de tipo texto y situalarla al final del documento
+                const cajaTexto = document.createElement("input");
+                cajaTexto.type = "text";
+                cajaTexto.placeholder = "Escribe aqui";
+                // ahora que este entre el Nuevo parrafo y Aprendiendo javascript
+                nuevoparrafo.insertAdjacentElement("afterend", cajaTexto);
+
+                
+
 
             /*let mivar = "adios"; //crear variable
             const numero = 5;
