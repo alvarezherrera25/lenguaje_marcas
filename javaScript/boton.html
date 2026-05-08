@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <button id="bsaludar" onclick="alert('hola caracola')">Saludar</button>
+    <button id="bdespedir">Despedir</button>
+    <script>
+        function saludar() {
+            alert("hola caracola");
+        }
+
+        const botonDespedir = document.getElementById("bdespedir");
+        botonDespedir.addEventListener("click", () => { alert("adios caracola"); });
+    </script>
+</html>

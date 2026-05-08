@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- crear dos botonos -->
+<!-- uno incrementar contador y otro decrementar contador -->
+<!-- mostrar el resultado en un parrafo -->
+<html>
+    <button id="sumar" >1+ contador</button>
+    <button id="restar">-1 contador</button>
+    <p id="resultado">Contador: 0</p>
+    <script>
+        let contador = 0;
+        const botonSumar = document.getElementById("sumar");
+        const botonRestar = document.getElementById("restar");
+        const resultado = document.getElementById("resultado");
+
+        function sumar() {
+            contador++;
+            resultado.textContent = `Contador: ${contador}`;
+        }
+
+        function restar() {
+            contador--;
+            resultado.textContent = `Contador: ${contador}`;
+        }
+
+        botonSumar.addEventListener("click", sumar);
+        botonRestar.addEventListener("click", restar);
+    </script>
+</html>
+
