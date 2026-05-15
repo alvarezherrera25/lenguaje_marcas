@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	El campo fax es opcional
+    Pueden existir uno o mas campos email
+	Pueden haber 0 o mas idioma dentro del campo idiomas
+	El nivel de idioma solo puede tomar los valores bajo, medio ,alto. Por defecto es medio
+ -->
+ <!--en fax colocamos ? porque es un campo opcional -->
+<!DOCTYPE cv [
+    <!ELEMENT cv (nombre, direccion, telefono, fax?, email+, idiomas?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT fax (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT idiomas (idioma+)>
+    <!ELEMENT idioma (#PCDATA)>
+    <!ATTLIST idioma nivel (bajo | medio | alto) "medio">
+    ]>
+
+<cv>
+    <nombre>Desmond Miles</nombre>
+    <direccion>Black Hills, Dakota del Sur, Estados Unidos</direccion>
+    <telefono>+1-555-555-555</telefono>
+    <fax>dasfjhskj</fax>
+    <email>desmond.miles@servidorprueba.org</email>
+    <email>desmond.miles@otroservidor.fr</email>
+    <idiomas>
+        <idioma nivel="bajo">Francés</idioma>
+        <idioma nivel="medio">Inglés</idioma>
+        <idioma>Italiano</idioma>
+    </idiomas>
+</cv>

@@ -74,28 +74,4 @@
 </html>
 
 
-- valido => correcto sintacticamente
-- bien formado [ valido ] => correcto sintacticamente y con sentido logico
--bien formado => valido
--valido !=> bien formado
 
-
-reglas para definir un email: campos origen, destinatario, asunto.
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email [
-    <!ELEMENT email (origen, destinatario, asunto, mensaje?)>
-    <!ELEMENT origen (#PCDATA)>
-    <!ELEMENT destinatario (#PCDATA)>
-    <!ELEMENT asunto (#PCDATA)>
-    <!ELEMENT mensaje (#PCDATA)>
-    ]>
-<email>
-    <origen>yo@gmail.com</origen>
-    <destinatario>tú@gmail.com</destinatario>
-    <asunto>Hola</asunto>
-    <mensaje>Este es un mensaje de prueba</mensaje>
-</email>
-
-2 mecanismos para verificar xml es bien formado:
-- DTD (Document Type Definition) 
-- XSD (XML Schema Definition) - Quizas no da tiempo a verlo

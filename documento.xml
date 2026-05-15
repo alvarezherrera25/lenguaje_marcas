@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+<!ENTITY ciudad "Zaragoza">
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro (titulo, autor, anio, ciudad*)>
+<!ATTLIST libro 
+        id ID #REQUIRED
+        categoria (programacion|sistemas|bases_de_datos) #REQUIRED
+        disponible (si | no) "si"
+  >
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+]>
+
+    <biblioteca>
+        <libro id="L1" categoria="programacion" disponible="si">
+            <titulo>Aprender XML</titulo>
+            <autor>Juan Pérez</autor>
+            <anio>2024</anio>
+            <ciudad>&ciudad;</ciudad>
+        </libro>
+        <libro id="L2" categoria="sistemas" disponible="no">
+            <titulo>Administración Linux</titulo>
+            <autor>Ana Gómez</autor>
+            <anio>2023</anio>
+            <ciudad>&ciudad;</ciudad>
+        </libro>
+    </biblioteca>
