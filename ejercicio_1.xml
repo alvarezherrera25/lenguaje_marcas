@@ -5,15 +5,14 @@
 	Pueden haber 0 o mas idioma dentro del campo idiomas
 	El nivel de idioma solo puede tomar los valores bajo, medio ,alto. Por defecto es medio
  -->
- <!--en fax colocamos ? porque es un campo opcional -->
 <!DOCTYPE cv [
-    <!ELEMENT cv (nombre, direccion, telefono, fax?, email+, idiomas?)>
+    <!ELEMENT cv (nombre, direccion, telefono, fax?, email+, idiomas)>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT direccion (#PCDATA)>
     <!ELEMENT telefono (#PCDATA)>
     <!ELEMENT fax (#PCDATA)>
     <!ELEMENT email (#PCDATA)>
-    <!ELEMENT idiomas (idioma+)>
+    <!ELEMENT idiomas (idioma*)>
     <!ELEMENT idioma (#PCDATA)>
     <!ATTLIST idioma nivel (bajo | medio | alto) "medio">
     ]>
