@@ -1,39 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalogo_flora>
   <especie nombre_cientifico="Acer monspessulanum">
-    <nombre_comun>Arce de Montpellier, Arce menor</nombre_comun>
+    <nombre_comun>
+      <nombre1>Arce de Montpellier</nombre1>
+      <nombre2>Arce menor</nombre2>
+    </nombre_comun>
     <vegetacion>Caducifolio</vegetacion>
-    <altura_metros>De 6 a 10 metros</altura_metros>
-    <forma_estructura>Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante</forma_estructura>
-    <color_primavera>Haz verde brillante, envés verde blanquecino</color_primavera>
-    <resistencia_heladas>Heladas fuertes (hasta -15°C)</resistencia_heladas>
+    <altura>
+      <valor>De 6 a 10</valor>
+      <unidad>metros</unidad>
+    </altura>
+    <forma_estructura>
+      <copa>Copa esférica</copa>
+      <tronco>Tronco principal recto con bifurcaciones</tronco>
+      <ramas>Ramaje colgante</ramas>
+    </forma_estructura>
+    <color_primavera>
+      <haz>verde brillante</haz>
+      <enves>verde blanquecino</enves>
+    </color_primavera>
+    <resistencia_heladas limite="-15">
+      <valor>Heladas fuertes</valor>
+    </resistencia_heladas>
   </especie>
 
   <especie nombre_cientifico="Olea europaea">
-    <nombre_comun>Olivo</nombre_comun>
+    <nombre_comun>
+      <nombre1>Olivo</nombre1>
+    </nombre_comun>
     <vegetacion>Perenne</vegetacion>
-    <altura_metros>De 8 a 15 metros</altura_metros>
-    <forma_estructura>Copa irregular. Tronco principal irregular con bifurcaciones. Ramaje tortuoso</forma_estructura>
-    <color_primavera>Haz verde oscuro, envés verde plateado</color_primavera>
-    <resistencia_heladas>Heladas medias (hasta -10°C)</resistencia_heladas>
+    <altura>
+      <valor>De 8 a 15</valor>
+      <unidad>metros</unidad>
+    </altura>
+    <forma_estructura>
+      <copa>Copa irregular</copa>
+      <tronco>Tronco principal irregular con bifurcaciones</tronco>
+      <ramas>Ramaje tortuoso</ramas>
+    </forma_estructura>
+    <color_primavera>
+      <haz>verde oscuro</haz>
+      <enves>verde plateado</enves>
+    </color_primavera>
+    <resistencia_heladas limite="-10">
+      <valor>Heladas medias</valor>
+    </resistencia_heladas>
   </especie>
 
   <especie nombre_cientifico="Platanus orientalis">
-    <nombre_comun>Plátano</nombre_comun>
+    <nombre_comun>
+      <nombre1>Plátano</nombre1>
+    </nombre_comun>
     <vegetacion>Caducifolio</vegetacion>
-    <altura_metros>De 20 a 25 metros</altura_metros>
-    <forma_estructura>Copa ovoidal. Tronco principal recto. Ramaje expandido</forma_estructura>
-    <color_primavera>Haz verde medio, envés verde claro</color_primavera>
+    <altura>
+      <valor>De 20 a 25</valor>
+      <unidad>metros</unidad>
+    </altura>
+    <forma_estructura>
+      <copa>Copa ovoidal</copa>
+      <tronco>Tronco principal recto</tronco>
+      <ramas>Ramaje expandido</ramas>
+    </forma_estructura>
+    <color_primavera>
+      <haz>verde medio</haz>
+      <enves>verde claro</enves>
+    </color_primavera>
     <color_otono>Ocre</color_otono>
-    <resistencia_heladas>Heladas fuertes (hasta -20°C)</resistencia_heladas>
+    <resistencia_heladas limite="-20">
+      <valor>Heladas fuertes</valor>
+    </resistencia_heladas>
   </especie>
 
   <especie nombre_cientifico="Quercus ilex">
-    <nombre_comun>Encina</nombre_comun>
+    <nombre_comun>
+      <nombre1>Encina</nombre1>
+    </nombre_comun>
     <vegetacion>Perenne</vegetacion>
-    <altura_metros>En torno a 25 metros</altura_metros>
-    <forma_estructura>Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso</forma_estructura>
-    <color_primavera>Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado</color_primavera>
-    <resistencia_heladas>Heladas fuertes (hasta -15°C)</resistencia_heladas>
+    <altura>
+      <valor>En torno a 25</valor>
+      <unidad>metros</unidad>
+    </altura>
+    <forma_estructura>
+      <copa>Copa esférica o elíptica irregular</copa>
+      <tronco>Tronco principal recto</tronco>
+      <ramas>Ramaje tortuoso</ramas>
+    </forma_estructura>
+    <color_primavera>
+      <haz>verde oscuro (hojas antiguas) o plateado (hojas jóvenes)</haz>
+      <enves>plateado</enves>
+    </color_primavera>
+    <resistencia_heladas limite="-15">
+      <valor>Heladas fuertes</valor>
+    </resistencia_heladas>
   </especie>
 </catalogo_flora>

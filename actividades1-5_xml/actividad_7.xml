@@ -1,0 +1,19 @@
+<!--Indica si el siguiente documento XML está bien formado y en caso de no estarlo corrige los errores: -->
+<?xml version="1.0" encoding="UTF-8">
+<libros>
+    <libro id="quijote">
+        <titulo>El Quijote</titulo>
+        <autor nombre=cervantes nombre=cervantes>
+        <descripcion> Es el m<ejor libro de cervantes.</descripcion>
+    </libro]
+</libros>
+
+<!--Solucion--> 
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+    <libro id="quijote">
+        <titulo>El Quijote</titulo>
+        <autor nombre="cervantes">
+        <descripcion> Es el mejor libro de cervantes.</descripcion>
+    </libro>
+</libros>
