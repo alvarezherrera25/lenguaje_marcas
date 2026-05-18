@@ -7,6 +7,13 @@
     <imagen fichero="imagen.gif">
 </documento>
 <!--Solucion-->
+<!DOCTYPE documento [
+<!ELEMENT documento (p*, imagen*)>
+<!ELEMENT p (#PCDATA | destacar*)>
+<!ATTLIST destacar importancia CDATA #REQUIRED>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen fichero CDATA #REQUIRED>
+]>
 <?xml version="1.0" encoding="UTF-8"?>
 <documento>
     <p>Mi Primer <destacar importancia="1">documento XML</destacar></p>

@@ -1,0 +1,28 @@
+<!-- 
+Indica si el siguiente documento XML está bien formado y en caso de no estarlo corrige los errores: 
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia mundial>
+    <pais>
+        <pais>España</pais>
+        <continente>Europa</continente>
+        <capital></capital nombre = "Madrid">
+    </pais>
+</geografia mundial>
+-->
+<!-- Solucion -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE geografia_mundial [
+    <!ELEMENT geografia_mundial (paises*)>
+    <!ELEMENT paises (pais, continente, capital*)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT continente (#PCDATA)>
+    <!ELEMENT capital EMPTY>
+    <!ATTLIST capital nombre ID #REQUIRED>
+]>
+<geografia_mundial>
+    <paises>
+        <pais>España</pais>
+        <continente>Europa</continente>
+        <capital nombre="Madrid"></capital>
+    </paises>
+</geografia_mundial>

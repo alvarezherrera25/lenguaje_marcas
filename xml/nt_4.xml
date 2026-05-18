@@ -1,0 +1,15 @@
+<!--
+Explica qué significan cada una de las líneas de esta declaración ATTLIST según las tablas de tipos y valores de tus fuentes
+:
+<!ATTLIST videojuego 
+    codigo ID #REQUIRED
+    genero (rol | deporte | accion) "rol"
+    oferta CDATA #IMPLIED
+    version CDATA #FIXED "1.0"
+>
+El attlist define los atributos del elemento videojuego.
+El atributo codigo es de tipo ID y es obligatorio.
+El atributo genero tiene las opciones rol, deporte o accion y por defecto es rol.
+El atributo oferta es un string y es opcional.
+El atributo version es un string y tiene un valor fijo que es 1.0.
+-->

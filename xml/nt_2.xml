@@ -1,0 +1,16 @@
+<!-- 
+Basándote en la Figura 4.6 de tus fuentes
+, escribe la línea de <!ELEMENT ...> para las siguientes descripciones de una base de datos de música:
+Un elemento disco debe contener exactamente un titulo, uno o más autores y puede tener (o no) una nota opcional.
+Un elemento biblioteca puede estar vacío o contener muchas etiquetas disco.
+Un elemento cancion debe contener o bien un archivo de audio o bien la letra en texto, pero nunca ambos a la vez.
+-->
+<!ELEMENT biblioteca (disco*)>
+<!ELEMENT disco (titulo, autor+, nota?)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT nota EMPTY>
+
+<!ELEMENT cancion (audio | letra)>
+<!ELEMENT audio EMPTY>
+<!ELEMENT letra (#PCDATA)>

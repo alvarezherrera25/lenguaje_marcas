@@ -1,0 +1,18 @@
+<!-- 
+Crea un DTD interno que valide el siguiente escenario de una "Lista de Tareas":
+El elemento raíz es lista.
+La lista contiene una o más tarea.
+Cada tarea tiene un nombre (texto) y una descripcion (texto).
+La tarea tiene un atributo obligatorio llamado prioridad que solo puede ser: alta, media o baja.
+La tarea tiene un atributo opcional llamado id de tipo identificador único.
+Usa una entidad llamada urgente que contenga el texto "¡Revisar inmediatamente!".
+
+-->
+<!DOCTYPE lista [
+    <!ELEMENT lista (tarea+)>
+    <!ELEMENT tarea (nombre, descripcion)>
+    <!ATTLIST tarea
+        prioridad (alta | media | baja) #REQUIRED
+        id ID #IMPLIED>
+    <!ENTITY urgente "Revisar inmediatamente">
+]>

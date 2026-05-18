@@ -1,0 +1,21 @@
+<!-- 
+Siguiendo la metodología de la Actividad 1
+, representa en un documento XML (sin DTD, solo etiquetas) un Pedido de Restaurante que contenga:
+Nombre del camarero.
+Número de mesa.
+Una lista de platos pedidos (cada plato con su nombre y precio).
+Un comentario final del cliente usando una sección CDATA por si incluye caracteres como < o >.
+-->
+<pedido>
+    <camarero></camarero>
+    <mesa></mesa>
+    <platos>
+        <plato>
+            <nombre></nombre>
+            <precio></precio>
+        </plato>
+    </platos>
+    <comentarios>
+        <comentario></comentario>
+    </comentarios>
+</pedido>

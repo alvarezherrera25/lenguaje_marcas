@@ -1,0 +1,41 @@
+<!-- 
+Indica si el siguiente documento XML está bien formado y en caso de no estarlo corrige los errores: 
+<?xml version="1.0" encoding="UTF-8">
+<pelicula>
+    <titutlo>Con faldas y a lo loco</titulo>
+    <director>Billy Wilder</director>
+</pelicula>
+<pelicula>
+    <director>Leo McCarey</director>
+    <titutlo>Sopa de ganso</titulo>
+</pelicula>
+<autor />barto</autor>
+-->
+<!-- Solucion -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE peliculas [
+  <!ELEMENT peliculas (pelicula+, autor*)>
+  <!ELEMENT pelicula (titulo, director)>
+  <!ATTLIST pelicula
+    id ID #REQUIRED
+    categoria (accion | comedia) #REQUIRED
+    disponible (si | no) "no"
+  >
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT director (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+]>
+
+<peliculas>
+    <pelicula id="P1" categoria="accion" disponible="si">
+        <titulo>Con faldas y a lo loco</titulo>
+        <director>Billy Wilder</director>
+    </pelicula>
+    
+    <pelicula id="P2" categoria="comedia" disponible="no">
+        <titulo>Sopa de ganso</titulo>
+        <director>Leo McCarey</director>
+    </pelicula>
+    
+    <autor>barto</autor>
+</peliculas>

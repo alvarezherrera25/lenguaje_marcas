@@ -15,7 +15,7 @@
 ]>
 
     <biblioteca>
-        <libro id="L1" categoria="programacion" disponible="si">
+        <libro id="L1" categoria="programacion"  disponible="si">
             <titulo>Aprender XML</titulo>
             <autor>Juan Pérez</autor>
             <anio>2024</anio>
@@ -28,3 +28,4 @@
             <ciudad>&ciudad;</ciudad>
         </libro>
     </biblioteca>
+

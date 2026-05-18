@@ -12,13 +12,28 @@
 -->
 <!-- Solucion -->
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportistas [
+<!ENTITY anio "1980">
+<!ELEMENT deportistas (deportista+)>
+<!ELEMENT deportista (deporte,nombre,nacimiento)>
+<!ATTLIST deportista
+  id ID #REQUIRED
+  nacionalidad (Afroamericano | Estadounidense | Europeo) #REQUIRED>
+<!ELEMENT deporte (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
+]>
+
 <deportistas>
-    <deportista>
+    <deportista id="j1" nacionalidad="Afroamericano">
         <deporte>Atletismo</deporte>
         <nombre>Jesse Owens</nombre>
+        <nacimiento>&anio;</nacimiento>
     </deportista>
-    <deportista>
+    <deportista id="j2" nacionalidad="Estadounidense">
         <deporte>Natacion</deporte>
         <nombre>Mark Spitz</nombre>
+        <nacimiento>&anio;</nacimiento>
     </deportista>
 </deportistas>
+

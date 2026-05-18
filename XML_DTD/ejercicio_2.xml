@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    La cardinalidad de idioma dentro de idiomas es 0 o mas.
+	Los posibles valores de idioma son bajo , medio , alto , por defecto es medio.
+	El atributo codigopais es un IDREF (puntero) al atributo identificador de lengua.
+-->
+
+<!DOCTYPE cv [
+    <!ELEMENT cv (nombre, idiomas, lenguas)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT idiomas (idioma*)>
+<!ELEMENT idioma (#PCDATA)>
+<!ELEMENT lenguas (lengua*)>
+<!ELEMENT lengua (#PCDATA)>
+<!ATTLIST lengua identificador ID #REQUIRED>
+<!ATTLIST idioma nivel (bajo | medio | alto) "medio">
+<!ATTLIST idioma codigoPais IDREF #REQUIRED>
+]>
+<cv>
+    <nombre>Desmond Miles</nombre>
+    <idiomas>
+        <idioma codigoPais="fr" nivel="bajo">Francés</idioma>
+        <idioma codigoPais="en">Inglés</idioma>
+        <idioma codigoPais="it">Italiano</idioma>
+    </idiomas>
+    <lenguas>
+        <lengua identificador="fr">Francés</lengua>
+        <lengua identificador="en">Inglés</lengua>
+        <lengua identificador="it">Italiano</lengua>
+    </lenguas>
+</cv>
